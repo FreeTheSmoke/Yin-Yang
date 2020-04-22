@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ "$EUID" -ne 0 ]; then
-    echo enter password in order to install Yin-Yang correctly
+    echo "enter password in order to install Yin-Yang correctly (with superuser permissions)"
     sudo sh ./$0
     exit 1
 fi
@@ -31,7 +31,7 @@ fi
 echo ""
 echo "done"
 echo ""
-echo "Installin yin-yang for Commandline usage"
+echo "Installing yin-yang for Commandline usage"
 # copy files
 cp -r ./* /opt/yin-yang/
 #copy terminal executive
